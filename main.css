@@ -2,9 +2,19 @@
 
 /* Общие селекторы */
 
+* {
+  margin: 0;
+}
+
 body {
   font-family: "Raleway";
   color: #213053;
+}
+
+h3 {
+  font-size: 16px;
+  opacity: 0.7;
+  margin-bottom: 30px;
 }
 
 a {
@@ -24,9 +34,23 @@ button {
   padding: 15px;
 }
 
+button:hover {
+  background-color: #f6980c;
+  box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
+  transition: background-color 0.3s ease-in;
+}
+
 h1 {
   font-size: 70px;
   line-height: 76px;
+}
+
+select {
+  appearance: none;
+}
+
+input {
+  outline: none;
 }
 
 /* Шапка сайта */
@@ -84,4 +108,98 @@ h1 {
 }
 .about__image {
   width: 500px;
+}
+/* ВТОРАЯ СЕКЦИЯ */
+.container__form {
+  width: 550px;
+  margin: 0 auto;
+}
+
+.form__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.form {
+  background-color: #1d263a;
+  color: #fff;
+  padding-top: 115px;
+  padding-bottom: 115px;
+  text-align: center;
+}
+
+.form__title {
+  font-size: 48px;
+}
+
+.formd__descr {
+  font-size: 18px;
+  opacity: 0.65;
+}
+
+.form__submit {
+  width: 100%;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: left;
+}
+
+.form form {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.form label {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.form input,
+select {
+  font-size: 18px;
+  color: #213053;
+  height: 60px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 15px;
+}
+
+.form__submit {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+/* ПОДВАЛ */
+
+.footer {
+  padding: 90px 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.footer__container {
+  display: flex;
+  justify-content: center;
+}
+.copyright {
+  margin-top: 40px;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.footer__group {
+  margin-right: 80px;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
 }
